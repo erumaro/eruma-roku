@@ -1,0 +1,41 @@
+{
+  "name": "eruma-roku",
+  "version": "0.5.0",
+  "description": "New Wordpress theme for eruma.se. Developed with SEO, Accessibility and Mobile First as key parts.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "npm run clean && webpack --mode=development --progress --colors",
+    "build": "npm run clean && webpack --mode=production --progress --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erumaro/eruma-roku.git"
+  },
+  "author": "Tobias Årud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erumaro/eruma-roku/issues"
+  },
+  "homepage": "https://github.com/erumaro/eruma-roku#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "autoprefixer": "^9.4.2",
+    "babel-loader": "^8.0.4",
+    "bulma": "^0.7.2",
+    "css-loader": "^1.0.1",
+    "image-webpack-loader": "^4.6.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.10.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.27.0",
+    "webpack-cli": "^3.1.2"
+  }
+}
