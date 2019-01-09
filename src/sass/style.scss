@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "~bulma/bulma";
+@import "~bulma-timeline/dist/css/bulma-timeline";
 
 .screen-reader-text {
     border: 0;
@@ -43,4 +44,41 @@
     .title, .subtitle{
         opacity: 1;
     }
+}
+
+.entry-content{
+    padding: 4.5rem 0;
+}
+
+.next-post, .previous-post{
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 45%;
+    background: #00d1b2;
+}
+
+.next-post a, .previous-post a{
+    position: absolute;
+    display: block;
+    z-index: 10;
+    font-size: 5em;
+    top: 45%;
+    z-index: 1000;
+    height: 50px;
+}
+
+.next-post, .next-post a{
+    right: 0;
+}
+
+.timeline-marker.is-success.is-icon{
+    color: #fff;
+}
+
+.timespan{
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 1px;
+    display: block;
 }
