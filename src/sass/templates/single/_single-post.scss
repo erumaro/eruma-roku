@@ -1,0 +1,20 @@
+.comments-area.is-warning{
+    background-color: #ffdd57;
+    color: rgba(0,0,0,.7);
+
+    .title{
+        color: rgba(0,0,0,.7);
+    }
+}
+
+.comment-list, .children{
+    list-style: none;
+}
+
+.comment .card{
+    margin: 1.5rem 0;
+}
+
+.depth-2 .card{
+    margin-left: 1.5rem;
+}

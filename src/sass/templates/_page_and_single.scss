@@ -1,0 +1,56 @@
+/* PAGE AND SINGLE POST TYPES STYLES -----------------
+----------------------------------------------------*/
+.entry-header.featured-image{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 35vh;
+    background: url('../images/hero-image-default.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.entry-content, .comments-area{
+    padding: 4.5rem 0;
+}
+
+.hero-body{
+    background-color: rgba(0, 209, 178, 0.8);
+}
+
+.next-post, .previous-post{
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 45%;
+    background: #00d1b2;
+}
+
+.next-post a, .previous-post a{
+    position: absolute;
+    display: block;
+    z-index: 9999;
+    font-size: 5em;
+    top: 45%;
+    z-index: 1000;
+    height: 50px;
+}
+
+.next-post, .next-post a{
+    right: 0;
+}
+
+/* PAGE STYLES ---------------------------------------
+----------------------------------------------------*/
+@import "single/page";
+
+/* SINGLE-POST STYLES --------------------------------
+----------------------------------------------------*/
+@import "single/single-post";
+
+/* PROJECT STYLES ------------------------------------
+----------------------------------------------------*/
+@import "single/project";
+
+/* SINGLE-PROJECT STYLES -----------------------------
+----------------------------------------------------*/
+@import "single/single-project";
