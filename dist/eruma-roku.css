@@ -7208,6 +7208,9 @@ label.panel-block {
 
 /* GENERAL STYLES ------------------------------------
 ----------------------------------------------------*/
+html, body {
+  scroll-behavior: smooth; }
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -7264,7 +7267,7 @@ img.wp-smiley, img.emoji {
 .entry-content, .comments-area {
   padding: 4.5rem 0; }
 
-.hero-body {
+.featured-image > .hero-body {
   background-color: rgba(0, 209, 178, 0.8); }
 
 .next-post, .previous-post {
@@ -7319,18 +7322,37 @@ img.wp-smiley, img.emoji {
 /* PROJECT STYLES ------------------------------------
 ----------------------------------------------------*/
 .section-wrapper {
+  border-bottom: 3px dotted #363636;
+  padding-bottom: 1.5rem;
   margin-bottom: 1.5rem; }
+  .section-wrapper:last-child {
+    border-bottom: none;
+    padding-bottom: 0; }
 
 .section-item {
   position: relative;
   display: block;
-  flex-basis: 0;
-  flex-grow: 1;
-  flex-shrink: 1;
   padding: 0.75rem; }
 
-.content-excerpt .title {
-  color: #fff; }
+.content-excerpt {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0.75rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: .5s ease; }
+  .content-excerpt:hover {
+    opacity: 1;
+    /* NOTE: Need solution for tabbed navigation */ }
+  .content-excerpt .title {
+    color: #fff; }
 
 /* SINGLE-PROJECT STYLES -----------------------------
 ----------------------------------------------------*/
