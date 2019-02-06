@@ -1,2 +1,12 @@
 @charset "utf-8";
 @import "~bulma/bulma";
+@import "~bulma-timeline/dist/css/bulma-timeline";
+
+/* GENERAL STYLES ------------------------------------
+----------------------------------------------------*/
+@import "general";
+@import "screen-reader";
+@import "smiley";
+/* TEMPLATE STYLES -----------------------------------
+----------------------------------------------------*/
+@import "templates/page_and_single";
