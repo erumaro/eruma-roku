@@ -1,0 +1,20 @@
+Main Templates
+header.php      (Brand identity, navigation, <HEAD>)
+index.php       (Content area, The Loop, content-[post-type] and content-none)
+footer.php      (Footer Sidebar/Widget Area, footer copy, Contact form, JS via wp_footer)
+
+singular.php    (Page or single-project, single-post)
+archive.php     (taxonomy, author, date, archive-posttype)
+search.php      (show search results)
+404.php         (shows when link/permalink leads to uncreated page)
+
+home.php (blog)
+front-page.php (static front page)
+
+
+
+<article>
+<header>
+<div>
+<footer>
+</article>

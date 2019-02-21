@@ -1,14 +1,7 @@
 <?php get_header(); ?>
     <main id="content" class="site-content">
         <?php
-        if( have_posts() ) : 
-            if( is_home() && ! is_front_page() ) :
-                ?>
-                <header>
-                    <h2 class="page-title screen-reader-text"><?php single_post_title(); ?></h2>
-                </header>
-                <?php
-            endif;
+        if( have_posts() ) :
 
             while( have_posts() ) : 
                 

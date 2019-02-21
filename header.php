@@ -13,18 +13,13 @@
         <nav id="site-navigation" class="main-navigation navbar is-primary">
             <div class="container">
                 <div class="navbar-brand">
-                    <!--
-                    <a class="navbar-item custom-logo-link" href="index.html">
-                        <img class="custom-logo" src="https://eruma.se/wp-content/uploads/2016/05/cropped-logo_small.png?x69471" alt="Eruma">
-                    </a>
-                    -->
                     <?php
                     $custom_logo_id = get_theme_mod('custom_logo');
                     $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
                     if (has_custom_logo()) {
                         echo '<h1 class="navbar-item custom-logo-link"><img class="custom-logo" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . ' - '. get_bloginfo('description') .'"></h1>';
                     } else {
-                        echo '<h1>' . get_bloginfo('name') . '</h1>';
+                        echo '<h1 class="navbar-item custom-logo-link">' . get_bloginfo('name') . '</h1>';
                     }
                     ?>
                     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">

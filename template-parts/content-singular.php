@@ -3,10 +3,17 @@
         <div class="hero-body">
             <div class="container">
             <?php
-            if ( is_singular() ) :
+            if ( is_page() ) :
                 the_title( '<h2 class="entry-title title">', '</h2>' );
             else :
-                the_title( '<h2 class="entry-title title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+                the_title( '<h2 class="entry-title title">', '</h2>' );
+                ?>
+                <h3 class="entry-meta subtitle">
+                    <?php
+                    getPostDateHtml();
+                    getPostAuthorHtml();
+                    ?>
+                </h3><?php
             endif;
             ?>
             </div>

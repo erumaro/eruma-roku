@@ -1,42 +1,50 @@
 /* PAGE AND SINGLE POST TYPES STYLES -----------------
 ----------------------------------------------------*/
-.entry-header.featured-image{
+.has-post-thumbnail .entry-header{
     overflow: hidden;
     position: relative;
     width: 100%;
     min-height: 35vh;
-    background: url('../images/hero-image-default.jpg') center center no-repeat;
     background-size: cover;
 }
 
-.entry-content, .comments-area{
+.entry-content, .comments-area, .pagination{
     padding: 4.5rem 0;
 }
 
-.featured-image > .hero-body{
+.has-post-thumbnail .entry-header > .hero-body{
     background-color: rgba(0, 209, 178, 0.8);
 }
 
-.next-post, .previous-post{
+.nav-links, .back-to-top-wrapper{
     width: 100%;
-    display: block;
+    display: flex;
     position: fixed;
-    top: 45%;
-    background: #00d1b2;
-}
-
-.next-post a, .previous-post a{
-    position: absolute;
-    display: block;
+    bottom: 0;
+    background: $primary;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    padding: 0 1em;
     z-index: 9999;
-    font-size: 5em;
-    top: 45%;
-    z-index: 1000;
-    height: 50px;
 }
 
-.next-post, .next-post a{
-    right: 0;
+.back-to-top-wrapper{
+    justify-content: center;
+}
+
+.next-post a, .previous-post a, .back-to-top a{
+    font-size: 2em;
+    color: #fff;
+    transition: all .25s ease-out;
+
+    &:hover, &:focus{
+       color: #333; 
+    }
+}
+
+.updated:not(.published) {
+	display: none;
 }
 
 /* PAGE STYLES ---------------------------------------
