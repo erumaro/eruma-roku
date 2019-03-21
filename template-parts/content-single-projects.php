@@ -3,10 +3,17 @@
         <div class="hero-body">
             <div class="container">
             <?php
-            if ( is_singular() ) :
-                the_title( '<h2 class="entry-title title"><!-- this is content.php -->', '</h2>' );
-            else :
-                the_title( '<h2 class="entry-title title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+            if ( is_page() || is_single('project') ) :
+                the_title( '<h2 class="entry-title title"><!-- this is content-singular.php -->', '</h2>' );
+            elseif ( is_single() ) :
+                the_title( '<h2 class="entry-title title"><!-- this is content-singular.php -->', '</h2>' );
+                ?>
+                <h3 class="entry-meta subtitle">
+                    <?php
+                    getPostDateHtml();
+                    getPostAuthorHtml();
+                    ?>
+                </h3><?php
             endif;
             ?>
             </div>
@@ -31,6 +38,6 @@
         </div>
     </div>
     <footer class="entry-footer">
-        <?php // Content dependant ?>
+
     </footer>
 </article>

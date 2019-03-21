@@ -5,11 +5,7 @@
             
             the_post();
 
-            if ( is_front_page() ) {
-                get_template_part( 'template-parts/content', 'front-page' );
-            } else {
-            get_template_part( 'template-parts/content', 'singular' );
-            }
+            get_template_part( 'template-parts/content', 'single-projects' );
 
             if ( ! is_page() ) {
             echo eruma_roku_custom_post_nav();

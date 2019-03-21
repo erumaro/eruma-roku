@@ -1,9 +1,5 @@
     <footer id="colophon" class="site-footer footer" role="contentinfo">
-        <div id="supplementary" class="container">
-            <div id="footer-sidebar" class="footer-sidebar widget-area columns" role="complementary">
-            <?php get_sidebar('footer'); ?>
-            </div>
-        </div>
+        <?php get_sidebar('footer'); ?>
         <div class="site-info content has-text-centered">
             &copy; <?php echo date("Y"); ?> Eruma
             <span class="sep"> | </span>

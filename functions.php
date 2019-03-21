@@ -29,8 +29,8 @@ function addFooterSidebar() {
         'name'          => __( 'Footer Widget Area', 'eruma-roku' ),
         'id'            => 'sidebar-1',
         'description'   => __( 'Adds widgets to the footer of the theme.', 'eruma-roku' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s column">',
-		'after_widget'  => '</aside>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s column">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="widget-title title is-5">',
 		'after_title'   => '</h2>',
     ) );

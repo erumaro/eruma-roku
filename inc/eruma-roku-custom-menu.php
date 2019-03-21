@@ -10,7 +10,7 @@ class Eruma_Roku_Custom_Menu extends Walker_Nav_Menu
     static function items_wrap($args)
     {
         $args['container'] = '';
-        $args['items_wrap'] = '<div id="%1$s" class="%2$s">%3$s</nav>';
+        $args['items_wrap'] = '<div id="%1$s" class="%2$s">%3$s</div>';
         $args['fallback_cb'] = '__return_false';
         return $args;
     }

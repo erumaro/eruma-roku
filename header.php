@@ -10,7 +10,7 @@
 <body <?php body_class(); ?>>
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'eruma-roku' ); ?></a>
     <header id="masthead" class="site-header" role="banner">
-        <nav id="site-navigation" class="main-navigation navbar is-primary">
+        <nav id="site-navigation" class="main-navigation navbar is-danger" aria-label="Site Navigation">
             <div class="container">
                 <div class="navbar-brand">
                     <?php

@@ -5,8 +5,8 @@ if (!is_active_sidebar('sidebar-1')){
 }
 ?>
 
-<div id="supplementary" class="container">
-	<div id="footer-sidebar" class="footer-sidebar widget-area columns" role="complementary">
+<aside id="supplementary" class="container">
+	<div id="footer-sidebar" class="footer-sidebar widget-area columns">
 		<?php dynamic_sidebar('sidebar-1'); ?>
 	</div><!-- #footer-sidebar -->
-</div><!-- #supplementary -->
+</aside><!-- #supplementary -->

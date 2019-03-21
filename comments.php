@@ -92,7 +92,7 @@ if ( post_password_required() ) {
         ),
         'comment_field'         => '<div class="comment-form-comment field"><label class="label" for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea id="comment" class="textarea" name="comment" aria-required="true"></textarea></div>',
         'submit_field'          => '<div class="form-submit field">%1$s %2$s</div>',
-        'submit_button'         => '<div class="control"><input name="%1$s" type="submit" id="%2$s" class="%3$s button is-primary" value="%4$s" /></div>',
+        'submit_button'         => '<div class="control"><input name="%1$s" type="submit" id="%2$s" class="%3$s button is-danger" value="%4$s" /></div>',
     ) );
     ?>
     </div>
