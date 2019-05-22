@@ -2,7 +2,7 @@
     <main id="content" class="site-content">
     <?php
         if( have_posts() ) : ?>
-			<header class="page-header hero is-danger">
+			<header class="page-header hero is-primary">
             <div class="hero-body">
             <div class="container">
 				<?php

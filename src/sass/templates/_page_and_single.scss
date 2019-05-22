@@ -13,7 +13,7 @@
 }
 
 .has-post-thumbnail .entry-header > .hero-body{
-    background-color: rgba($danger, 0.8);
+    background-color: rgba($primary, 0.8);
 }
 
 .nav-links, .back-to-top-wrapper{
@@ -21,7 +21,7 @@
     display: flex;
     position: fixed;
     bottom: 0;
-    background: $danger;
+    background: $primary;
     justify-content: space-between;
     align-items: center;
     flex-flow: row;
@@ -41,6 +41,12 @@
     &:hover, &:focus{
        color: #333; 
     }
+}
+
+.pagination-link.is-current {
+    background-color: $primary;
+    border-color: $primary;
+    color: #fff;
 }
 
 .updated:not(.published) {

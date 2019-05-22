@@ -1,7 +1,7 @@
 import './sass/style.scss';
 
 import { navbarBurger } from './modules/navbar-burger';
-import { validateCommentForm } from './modules/comment-form-validation';
+import { commentsValidation } from './modules/comments-validation';
 
 navbarBurger();
-validateCommentForm();
+commentsValidation();
