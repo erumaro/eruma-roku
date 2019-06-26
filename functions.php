@@ -45,7 +45,7 @@ function getThemeScriptsAndStyles() {
     wp_enqueue_style( 'eruma-roku-style', get_stylesheet_uri() );
 
     wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.3.1/js/all.js', array(), '', true);
-    wp_enqueue_script( 'eruma-roku-custom-js', get_template_directory_uri() . '/dist/bundle.js', array(), '20190206', true );
+    wp_enqueue_script( 'eruma-roku-bundle-js', get_template_directory_uri() . '/dist/bundle.js', array(), '20190206', true );
 }
 add_action( 'wp_enqueue_scripts', 'getThemeScriptsAndStyles' );
 

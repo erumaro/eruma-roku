@@ -43,6 +43,10 @@
     }
 }
 
+.pagination-previous[disabled], .pagination-next[disabled], .pagination-link[disabled] {
+    color: #3d3d3d;
+}
+
 .pagination-link.is-current {
     background-color: $primary;
     border-color: $primary;
@@ -56,15 +60,12 @@
 /* PAGE STYLES ---------------------------------------
 ----------------------------------------------------*/
 @import "single/page";
+@import "single/front-page";
 
-/* SINGLE-POST STYLES --------------------------------
+/* LIST STYLES ---------------------------------------
 ----------------------------------------------------*/
-@import "single/single-post";
+@import "list/list";
 
-/* PROJECT STYLES ------------------------------------
+/* SINGLE STYLES -------------------------------------
 ----------------------------------------------------*/
-@import "single/project";
-
-/* SINGLE-PROJECT STYLES -----------------------------
-----------------------------------------------------*/
-@import "single/single-project";
+@import "single/single";

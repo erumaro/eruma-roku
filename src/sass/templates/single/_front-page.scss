@@ -1,0 +1,22 @@
+.box {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.box:last-child, .content:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.skills-item {
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+}
+
+.content .skills-item ul{
+    list-style: none;
+    margin-left: 0;
+    margin-top: 0;
+}
