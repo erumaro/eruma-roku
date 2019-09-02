@@ -7317,6 +7317,9 @@ img.wp-smiley, img.emoji {
   letter-spacing: 1px;
   display: block; }
 
+.home .section .title {
+  text-align: center; }
+
 .box {
   margin-left: 1.5rem;
   margin-right: 1.5rem; }
@@ -7335,6 +7338,12 @@ img.wp-smiley, img.emoji {
   list-style: none;
   margin-left: 0;
   margin-top: 0; }
+
+.column figure {
+  margin: auto; }
+
+.content figure:not(:last-child) {
+  margin-bottom: auto; }
 
 /* LIST STYLES ---------------------------------------
 ----------------------------------------------------*/

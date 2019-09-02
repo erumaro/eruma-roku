@@ -54,3 +54,4 @@ require get_template_directory() . '/inc/eruma-roku-custom-menu.php';
 require get_template_directory() . '/inc/post-type-project.php';
 require get_template_directory() . '/inc/eruma-roku-custom-post-nav.php';
 require get_template_directory() . '/inc/eruma-roku-pagination.php';
+require get_template_directory() . '/inc/eruma-roku-front-page-code.php';
