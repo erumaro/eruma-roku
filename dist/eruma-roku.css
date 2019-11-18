@@ -7431,6 +7431,16 @@ img.wp-smiley, img.emoji {
   .content-excerpt .title {
     color: #fff; }
 
+.post-type-archive-projects article {
+  margin: 4em; }
+
+.post-type-archive-projects .project-content {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  background-size: cover !important; }
+
 /* BLOG STYLES ---------------------------------------
 ----------------------------------------------------*/
 /* ARCHIVE STYLES ------------------------------------

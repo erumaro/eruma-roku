@@ -39,3 +39,16 @@
         color: #fff;
     }
 }
+
+.post-type-archive-projects{
+    article{
+        margin: 4em;
+    }
+    .project-content{
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        min-height: 50vh;
+        background-size: cover !important;
+    }
+}

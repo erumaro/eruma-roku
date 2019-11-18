@@ -16,17 +16,18 @@
 
                 get_template_part( 'template-parts/content', get_post_type() );
                 ?>
-                <div class="back-to-top-wrapper">
-                <?php
-                $backtotoplinkinner = '<i class="fas fa-angle-up"></i><span class="screen-reader-text">' . __( 'Back to top' ) .'</span>';
-                $backtotop = '<div class="back-to-top"><a href="#masthead">'. $backtotoplinkinner .'</a></div>';
-                echo $backtotop;
-                ?>
-                </div>
                 <?php
             endwhile;
 
-            eruma_roku_pagination( $before = '<div class="container">', $after = '</div>' );
+            eruma_roku_pagination( $before = '<div class="container">', $after = '</div>' ); ?>
+
+            <div class="back-to-top-wrapper">
+            <?php
+            $backtotoplinkinner = '<i class="fas fa-angle-up"></i><span class="screen-reader-text">' . __( 'Back to top' ) .'</span>';
+            $backtotop = '<div class="back-to-top"><a href="#masthead">'. $backtotoplinkinner .'</a></div>';
+            echo $backtotop;
+            ?>
+            </div><?php
 
         else : 
 
