@@ -7345,6 +7345,55 @@ img.wp-smiley, img.emoji {
 .content figure:not(:last-child) {
   margin-bottom: auto; }
 
+/* New code 2019-11-15 */
+.full-width-bg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.project-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; }
+
+.project-text {
+  background-color: rgba(119, 20, 20, 0.8);
+  padding: 1em;
+  transition: 1s;
+  color: #fff; }
+  .project-text .title {
+    color: #fff; }
+  .project-text:hover {
+    background-color: #771414; }
+
+.project-footer {
+  padding: 1em;
+  background: #771414; }
+  .project-footer .button {
+    margin-bottom: 0; }
+
+.skills .column {
+  -webkit-transform: perspective(5em) translateZ(0);
+          transform: perspective(5em) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform; }
+  .skills .column:hover {
+    background-color: #771414;
+    color: #fff;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    z-index: 1; }
+    .skills .column:hover h3 {
+      color: #fff; }
+  @media (prefers-reduced-motion: reduce) {
+    .skills .column {
+      -webkit-transform: none;
+              transform: none; } }
+
 /* LIST STYLES ---------------------------------------
 ----------------------------------------------------*/
 /* PROJECT STYLES ------------------------------------

@@ -63,45 +63,43 @@ if ( ! function_exists( 'eruma_roku_post_footer' ) ) :
             <footer class="entry-footer">
                 <nav id="single-post-type-navigation" class="post-navigation navbar is-dark">
                     <div class="container">
-                        <div class="navbar-menu">
-                            <?php
-                                if ( is_singular( 'projects' ) ) :
-                                    echo '<div class="technology-list navbar-start">';
-                                    echo '<span class="screen-reader-text">'. __('Posted in', 'eruma-roku') .'</span>';
-                                    $terms = get_the_terms( $post->ID, 'technology' );
-                                    if ($terms && ! is_wp_error($terms)): ?>
-                                        <?php foreach($terms as $term): ?>
-                                            <a href="<?php echo get_term_link( $term->slug, 'technology'); ?>" rel="tag" class="navbar-item"><?php echo $term->name; ?></a>
-                                        <?php endforeach;
-                                    endif;
-                                    echo '</div>';
-                                elseif ( is_single() ) : 
-                                    echo '<div class="category-list navbar-start">';
-                                    echo '<span class="screen-reader-text">'. __('Posted in', 'eruma-roku') .'</span>';
-                                    $terms = get_the_terms( $post->ID, 'category' );
-                                    if ($terms && ! is_wp_error($terms)): ?>
-                                        <?php foreach($terms as $term): ?>
-                                            <a href="<?php echo get_term_link( $term->slug, 'category'); ?>" rel="tag" class="navbar-item"><?php echo $term->name; ?></a>
-                                        <?php endforeach;
-                                    endif;
-                                    echo '</div>';
-                                    echo '<div class="tags">';
-                                    echo '<span class="screen-reader-text">'. __('Tags:', 'eruma-roku') .'</span>';
-                                    $terms = get_the_terms( $post->ID, 'post_tag' );
-                                    if ($terms && ! is_wp_error($terms)): ?>
-                                        <?php foreach($terms as $term): ?>
-                                            <a href="<?php echo get_term_link( $term->slug, 'post_tag'); ?>" rel="tag" class="tag">
-                                                <span><?php echo $term->name; ?></span>
-                                                <span class="icon">
-                                                    <i class="fas fa-tag"></i>
-                                                </span>
-                                            </a>
-                                        <?php endforeach;
-                                    endif;
-                                    echo '</div>';
+                        <?php
+                            if ( is_singular( 'projects' ) ) :
+                                echo '<div class="technology-list navbar-start">';
+                                echo '<span class="screen-reader-text">'. __('Posted in', 'eruma-roku') .'</span>';
+                                $terms = get_the_terms( $post->ID, 'technology' );
+                                if ($terms && ! is_wp_error($terms)): ?>
+                                    <?php foreach($terms as $term): ?>
+                                        <a href="<?php echo get_term_link( $term->slug, 'technology'); ?>" rel="tag" class="navbar-item"><?php echo $term->name; ?></a>
+                                    <?php endforeach;
                                 endif;
-                            ?>
-                        </div>
+                                echo '</div>';
+                            elseif ( is_single() ) : 
+                                echo '<div class="category-list navbar-start">';
+                                echo '<span class="screen-reader-text">'. __('Posted in', 'eruma-roku') .'</span>';
+                                $terms = get_the_terms( $post->ID, 'category' );
+                                if ($terms && ! is_wp_error($terms)): ?>
+                                    <?php foreach($terms as $term): ?>
+                                        <a href="<?php echo get_term_link( $term->slug, 'category'); ?>" rel="tag" class="navbar-item"><?php echo $term->name; ?></a>
+                                    <?php endforeach;
+                                endif;
+                                echo '</div>';
+                                echo '<div class="tags">';
+                                echo '<span class="screen-reader-text">'. __('Tags:', 'eruma-roku') .'</span>';
+                                $terms = get_the_terms( $post->ID, 'post_tag' );
+                                if ($terms && ! is_wp_error($terms)): ?>
+                                    <?php foreach($terms as $term): ?>
+                                        <a href="<?php echo get_term_link( $term->slug, 'post_tag'); ?>" rel="tag" class="tag">
+                                            <span><?php echo $term->name; ?></span>
+                                            <span class="icon">
+                                                <i class="fas fa-tag"></i>
+                                            </span>
+                                        </a>
+                                    <?php endforeach;
+                                endif;
+                                echo '</div>';
+                            endif;
+                        ?>
                     </div>
                 </nav><!-- #single-post-type-navigation -->
             </footer><!-- .entry-footer --><?php
