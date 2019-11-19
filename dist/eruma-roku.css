@@ -7439,7 +7439,8 @@ img.wp-smiley, img.emoji {
   position: relative;
   width: 100%;
   min-height: 50vh;
-  background-size: cover !important; }
+  background-size: cover !important;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
 
 /* BLOG STYLES ---------------------------------------
 ----------------------------------------------------*/
