@@ -7431,10 +7431,10 @@ img.wp-smiley, img.emoji {
   .content-excerpt .title {
     color: #fff; }
 
-.post-type-archive-projects article {
+.post-type-archive-projects article, .tax-technology article {
   margin: 4em; }
 
-.post-type-archive-projects .project-content {
+.post-type-archive-projects .project-content, .tax-technology .project-content {
   overflow: hidden;
   position: relative;
   width: 100%;

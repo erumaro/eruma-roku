@@ -12,8 +12,11 @@
                         </div>
                     </div>
                     <footer class="project-footer buttons">
-                    <?php 
-                    echo '<a class="button is-primary is-inverted" href="' . esc_url( get_permalink() ) . '">'. __( 'Read more', 'eruma-roku' ) .'</a>';
+                    <a class="button is-primary is-inverted" href="<?php echo esc_url( get_permalink() ) ?>">
+                    <?php echo __( 'Continue reading ', 'eruma-roku' ); ?>
+                    <span class="screen-reader-text"><?php echo get_the_title(); ?></span>
+                    </a>
+                    <?php
                     if( get_field('live_link') ) :
                         echo '<a class="button is-primary is-inverted" href="' . esc_url( get_field('live_link') ) . '">'. __( 'Visit Website', 'eruma-roku' ) .'</a>';
                     endif;

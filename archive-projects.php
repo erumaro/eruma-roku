@@ -2,6 +2,13 @@
     <main id="content" class="site-content">
         <?php
         if( have_posts() ) :
+            if( is_post_type_archive('projects') && ! is_singular('projects') ) :
+                ?>
+                <header>
+                    <h2 class="page-title screen-reader-text"><?php echo __( 'Projects' ) ?></h2>
+                </header>
+                <?php
+            endif;
 
             while( have_posts() ) : 
                 
