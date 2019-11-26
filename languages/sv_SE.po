@@ -4,15 +4,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eruma-roku 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/eruma-roku\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-11-26T13:34:52+01:00\n"
+"PO-Revision-Date: 2019-11-26 13:35+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-11-26T13:34:52+01:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.4.0\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Domain: eruma-roku\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Theme Name of the theme
 msgid "eruma-roku"
@@ -24,7 +26,7 @@ msgstr ""
 
 #. Description of the theme
 msgid "New portfolio theme for eruma.se"
-msgstr ""
+msgstr "Nytt portfolio tema för eruma.se"
 
 #. Author of the theme
 msgid "Tobias Årud"
@@ -37,307 +39,295 @@ msgstr ""
 #. translators: 1: title.
 #: comments.php:19
 msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr ""
+msgstr "En kommentar till &ldquo;%1$s&rdquo;"
 
 #. translators: 1: comment count number, 2: title.
 #: comments.php:25
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s kommentar till &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s kommentarer till &ldquo;%2$s&rdquo;"
 
 #: comments.php:49
 msgid "Comments are closed."
-msgstr ""
+msgstr "Kommentarer är stängda."
 
 #: comments.php:83
 msgid "Name"
-msgstr ""
+msgstr "Namn"
 
 #: comments.php:86
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: comments.php:89
 msgid "Website"
-msgstr ""
+msgstr "Hemsida"
 
 #: footer.php:7
 msgid "Theme: %1$s by %2$s."
-msgstr ""
+msgstr "Tema: %1$s av %2$s."
 
 #: functions.php:20
 msgid "Primary"
-msgstr ""
+msgstr "Primär"
 
 #: functions.php:29
 msgid "Footer Widget Area"
-msgstr ""
+msgstr "Footer Widget-område"
 
 #: functions.php:31
 msgid "Adds widgets to the footer of the theme."
-msgstr ""
+msgstr "Lägger till widgets i temats footer."
 
 #: header.php:11
 msgid "Skip to content"
-msgstr ""
+msgstr "Hoppa till innehåll"
 
 #: inc/eruma-roku-pagination.php:36
 msgid "pagination"
-msgstr ""
+msgstr "paginering"
 
-#: inc/eruma-roku-pagination.php:38
-#: inc/eruma-roku-pagination.php:42
+#: inc/eruma-roku-pagination.php:38 inc/eruma-roku-pagination.php:42
 msgid "Previous"
-msgstr ""
+msgstr "Föregående"
 
 #: inc/eruma-roku-pagination.php:42
 msgid "This is the first page"
-msgstr ""
+msgstr "Detta är första sidan"
 
 #: inc/eruma-roku-pagination.php:45
 msgid "Next"
-msgstr ""
+msgstr "Nästa"
 
 #: inc/eruma-roku-pagination.php:49
 msgid "This is the last page"
-msgstr ""
+msgstr "Detta är sista sidan"
 
 #: inc/eruma-roku-pagination.php:49
 msgid "Next page"
-msgstr ""
+msgstr "Nästa sida"
 
 #: inc/eruma-roku-pagination.php:55
 msgid "Page "
-msgstr ""
+msgstr "Sida "
 
 #: inc/eruma-roku-pagination.php:55
 msgid "page"
-msgstr ""
+msgstr "sida"
 
 #: inc/eruma-roku-pagination.php:57
 msgid "Go to page "
-msgstr ""
+msgstr "Gå till sida "
 
 #: inc/post-type-project.php:8
 msgctxt "Post Type General Name"
 msgid "Projects"
-msgstr ""
+msgstr "Projekt"
 
 #: inc/post-type-project.php:9
 msgctxt "Post Type Singular Name"
 msgid "Project"
-msgstr ""
+msgstr "Projekt"
 
 #: inc/post-type-project.php:10
 msgid "Projects"
-msgstr ""
+msgstr "Projekt"
 
-#: inc/post-type-project.php:11
-#: inc/post-type-project.php:37
+#: inc/post-type-project.php:11 inc/post-type-project.php:37
 msgid "Project"
-msgstr ""
+msgstr "Projekt"
 
 #: inc/post-type-project.php:12
 msgid "Item Archives"
-msgstr ""
+msgstr "Artikelarkiv"
 
 #: inc/post-type-project.php:13
 msgid "Item Attributes"
-msgstr ""
+msgstr "Artikelattribut"
 
-#: inc/post-type-project.php:14
-#: inc/post-type-project.php:68
+#: inc/post-type-project.php:14 inc/post-type-project.php:68
 msgid "Parent Item:"
-msgstr ""
+msgstr "Huvud artikel:"
 
-#: inc/post-type-project.php:15
-#: inc/post-type-project.php:66
+#: inc/post-type-project.php:15 inc/post-type-project.php:66
 msgid "All Items"
-msgstr ""
+msgstr "Alla artiklar"
 
-#: inc/post-type-project.php:16
-#: inc/post-type-project.php:70
+#: inc/post-type-project.php:16 inc/post-type-project.php:70
 msgid "Add New Item"
-msgstr ""
+msgstr "Lägg till ny artikel"
 
 #: inc/post-type-project.php:17
 msgid "Add New"
-msgstr ""
+msgstr "Lägg till ny"
 
 #: inc/post-type-project.php:18
 msgid "New Item"
-msgstr ""
+msgstr "Ny artikel"
 
-#: inc/post-type-project.php:19
-#: inc/post-type-project.php:71
+#: inc/post-type-project.php:19 inc/post-type-project.php:71
 msgid "Edit Item"
-msgstr ""
+msgstr "Redigera artikel"
 
-#: inc/post-type-project.php:20
-#: inc/post-type-project.php:72
+#: inc/post-type-project.php:20 inc/post-type-project.php:72
 msgid "Update Item"
-msgstr ""
+msgstr "Uppdatera artikel"
 
-#: inc/post-type-project.php:21
-#: inc/post-type-project.php:73
+#: inc/post-type-project.php:21 inc/post-type-project.php:73
 msgid "View Item"
-msgstr ""
+msgstr "Visa artikel"
 
 #: inc/post-type-project.php:22
 msgid "View Items"
-msgstr ""
+msgstr "Visa artiklar"
 
 #: inc/post-type-project.php:23
 msgid "Search Item"
-msgstr ""
+msgstr "Sök artikel"
 
 #: inc/post-type-project.php:24
 msgid "Not found"
-msgstr ""
+msgstr "Inget hittat"
 
 #: inc/post-type-project.php:25
 msgid "Not found in Trash"
-msgstr ""
+msgstr "Inget hittat i papperskorgen"
 
 #: inc/post-type-project.php:26
 msgid "Featured Image"
-msgstr ""
+msgstr "Utvald bild"
 
 #: inc/post-type-project.php:27
 msgid "Set featured image"
-msgstr ""
+msgstr "Ställ in utvald bild"
 
 #: inc/post-type-project.php:28
 msgid "Remove featured image"
-msgstr ""
+msgstr "Ta bort utvald bild"
 
 #: inc/post-type-project.php:29
 msgid "Use as featured image"
-msgstr ""
+msgstr "Använd som utvald bild"
 
 #: inc/post-type-project.php:30
 msgid "Insert into item"
-msgstr ""
+msgstr "Infoga i artikeln"
 
 #: inc/post-type-project.php:31
 msgid "Uploaded to this item"
-msgstr ""
+msgstr "Laddat upp till den här artikeln"
 
-#: inc/post-type-project.php:32
-#: inc/post-type-project.php:81
+#: inc/post-type-project.php:32 inc/post-type-project.php:81
 msgid "Items list"
-msgstr ""
+msgstr "Artikellista"
 
-#: inc/post-type-project.php:33
-#: inc/post-type-project.php:82
+#: inc/post-type-project.php:33 inc/post-type-project.php:82
 msgid "Items list navigation"
-msgstr ""
+msgstr "Artikellistnavigation"
 
 #: inc/post-type-project.php:34
 msgid "Filter items list"
-msgstr ""
+msgstr "Filtrera artikellista"
 
 #: inc/post-type-project.php:38
 msgid "Web dev projects"
-msgstr ""
+msgstr "Webbutvecklarprojekt"
 
 #: inc/post-type-project.php:63
 msgctxt "Taxonomy General Name"
 msgid "Technologies"
-msgstr ""
+msgstr "Tekniker"
 
 #: inc/post-type-project.php:64
 msgctxt "Taxonomy Singular Name"
 msgid "Technology"
-msgstr ""
+msgstr "Teknik"
 
 #: inc/post-type-project.php:65
 msgid "Technology"
-msgstr ""
+msgstr "Teknik"
 
 #: inc/post-type-project.php:67
 msgid "Parent Item"
-msgstr ""
+msgstr "Huvudteknik"
 
 #: inc/post-type-project.php:69
 msgid "New Item Name"
-msgstr ""
+msgstr "Nytt tekniknamn"
 
 #: inc/post-type-project.php:74
 msgid "Separate items with commas"
-msgstr ""
+msgstr "Separera tekniker med kommatecken"
 
 #: inc/post-type-project.php:75
 msgid "Add or remove items"
-msgstr ""
+msgstr "Lägg till eller ta bort tekniker"
 
 #: inc/post-type-project.php:76
 msgid "Choose from the most used"
-msgstr ""
+msgstr "Välj bland de mest använda"
 
 #: inc/post-type-project.php:77
 msgid "Popular Items"
-msgstr ""
+msgstr "Populära artiklar"
 
 #: inc/post-type-project.php:78
 msgid "Search Items"
-msgstr ""
+msgstr "Sök artiklar"
 
 #: inc/post-type-project.php:79
 msgid "Not Found"
-msgstr ""
+msgstr "Hittades inte"
 
 #: inc/post-type-project.php:80
 msgid "No items"
-msgstr ""
+msgstr "Inga artiklar"
 
 #. translators: %s: post date.
 #: inc/template-tags.php:22
 msgctxt "post date"
 msgid "Posted on %s"
-msgstr ""
+msgstr "Publicerad %s"
 
 #. translators: %s: post author.
 #: inc/template-tags.php:38
 msgctxt "post author"
 msgid "by %s"
-msgstr ""
+msgstr "av %s"
 
-#: inc/template-tags.php:69
-#: inc/template-tags.php:79
+#: inc/template-tags.php:69 inc/template-tags.php:79
 msgid "Posted in"
-msgstr ""
+msgstr "Kategoriserat som"
 
 #: inc/template-tags.php:88
 msgid "Tags:"
-msgstr ""
+msgstr "Etiketter:"
 
 #: inc/template-tags.php:124
 msgid "<h3 class=\"title is-4\">%s says:</h3>"
-msgstr ""
+msgstr "<h3 class=\"title is-4\">%s skriver:</h3>"
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #: template-parts/content-front-page.php:8
-#: template-parts/content-singular.php:40
-#: template-parts/content.php:21
+#: template-parts/content-singular.php:40 template-parts/content.php:21
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
+msgstr "Fortsätt att läsa<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #: template-parts/content-front-page.php:46
 #: template-parts/content-projects.php:16
 msgid "Continue reading "
-msgstr ""
+msgstr "Fortsätt att läsa "
 
 #: template-parts/content-front-page.php:51
 #: template-parts/content-projects.php:21
 #: template-parts/content-singular.php:22
 msgid "Visit Website"
-msgstr ""
+msgstr "Besök hemsida"
 
 #: template-parts/content-front-page.php:54
 #: template-parts/content-projects.php:24
 #: template-parts/content-singular.php:25
 msgid "Visit Github Repo"
-msgstr ""
+msgstr "Besök Github repo"

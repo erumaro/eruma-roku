@@ -35,14 +35,14 @@ function eruma_roku_pagination( $before = '', $after = '' ) {
 
 	echo $before.'<nav class="pagination is-centered" aria-label="'. esc_attr__('pagination', 'eruma-roku') .'">'."";
 
-	$prevposts = get_previous_posts_link('Previous');
+	$prevposts = get_previous_posts_link( esc_html__('Previous', 'eruma-roku') );
 	if( $prevposts ){
 		echo $prevposts;
 	} else {
 		echo '<a class="pagination-previous" title="'. esc_attr__('This is the first page', 'eruma-roku') .'" disabled>'. esc_html__('Previous', 'eruma-roku') .'</a>';
 	}
 
-	$nextposts = get_next_posts_link('Next');
+	$nextposts = get_next_posts_link( esc_html__('Next', 'eruma-roku') );
 	if( $nextposts ){
 		echo $nextposts;
 	} else {
