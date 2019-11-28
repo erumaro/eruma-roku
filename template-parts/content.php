@@ -30,7 +30,5 @@
         ?>
         </div>
     </div>
-    <footer class="entry-footer">
-        <?php // Content dependant ?>
-    </footer>
+    <?php eruma_roku_post_footer(); ?>
 </article>
