@@ -45,6 +45,7 @@ function getThemeScriptsAndStyles() {
     wp_enqueue_style( 'eruma-roku-style', get_stylesheet_uri() );
 
     wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.3.1/js/all.js', array(), '', true);
+    wp_enqueue_script( 'jquery-validate', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js', array( 'jquery' ), '', true);
     wp_enqueue_script( 'eruma-roku-bundle-js', get_template_directory_uri() . '/dist/bundle.js', array(), '20190206', true );
 }
 add_action( 'wp_enqueue_scripts', 'getThemeScriptsAndStyles' );
