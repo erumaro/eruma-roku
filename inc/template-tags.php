@@ -75,6 +75,11 @@ if ( ! function_exists( 'eruma_roku_post_footer' ) ) :
                                 endif;
                                 echo '</div>';
                             elseif ( is_single() || is_home() ) : 
+                                if( is_home() ) :
+                                    echo '<div class="comment-link navbar-start">';
+                                    comments_popup_link( esc_html__( 'Leave a comment', 'eruma-roku' ), esc_html__( '1 Comment', 'eruma-roku' ), esc_html__( '% Comments', 'eruma-roku' ), 'navbar-item' );
+                                    echo '</div>';
+                                endif;
                                 echo '<div class="category-list navbar-start">';
                                 echo '<span class="screen-reader-text">'. __('Posted in', 'eruma-roku') .'</span>';
                                 $terms = get_the_terms( $post->ID, 'category' );
@@ -98,11 +103,6 @@ if ( ! function_exists( 'eruma_roku_post_footer' ) ) :
                                     <?php endforeach;
                                 endif;
                                 echo '</div>';
-                                if( is_home() ) :
-                                    echo '<div class="comment-link navbar-end">';
-                                    comments_popup_link( esc_html__( 'Leave a comment', 'eruma-roku' ), esc_html__( '1 Comment', 'eruma-roku' ), esc_html__( '% Comments', 'eruma-roku' ), 'navbar-item' );
-                                    echo '</div>';
-                                endif;
                             endif;
                         ?>
                     </div>
