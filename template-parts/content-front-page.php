@@ -66,55 +66,7 @@
     </section>
     <section id="skills" class="skills full-width-bg">
         <div class="container content">
-            <h2 class="title">Min verktygslåda</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque ut sapien nec hendrerit. Aliquam molestie eget odio auctor pulvinar.</p>
-            <div class="columns">
-                <div class="column">
-                    <h3 class="title">Front-end</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque ut sapien nec hendrerit. Aliquam molestie eget odio auctor pulvinar.</p>
-                    <div class="tags">
-                        <span class="tag">One</span>
-                        <span class="tag">Two</span>
-                        <span class="tag">Three</span>
-                        <span class="tag">Four</span>
-                        <span class="tag">Five</span>
-                        <span class="tag">Six</span>
-                        <span class="tag">Seven</span>
-                        <span class="tag">Eight</span>
-                        <span class="tag">Nine</span>
-                    </div>
-                </div>
-                <div class="column">
-                    <h3 class="title">Back-end</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque ut sapien nec hendrerit. Aliquam molestie eget odio auctor pulvinar.</p>
-                    <div class="tags">
-                        <span class="tag">One</span>
-                        <span class="tag">Two</span>
-                        <span class="tag">Three</span>
-                        <span class="tag">Four</span>
-                        <span class="tag">Five</span>
-                        <span class="tag">Six</span>
-                        <span class="tag">Seven</span>
-                        <span class="tag">Eight</span>
-                        <span class="tag">Nine</span>
-                    </div>
-                </div>
-                <div class="column">
-                    <h3 class="title">Personal</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque ut sapien nec hendrerit. Aliquam molestie eget odio auctor pulvinar.</p>
-                    <div class="tags">
-                        <span class="tag">One</span>
-                        <span class="tag">Two</span>
-                        <span class="tag">Three</span>
-                        <span class="tag">Four</span>
-                        <span class="tag">Five</span>
-                        <span class="tag">Six</span>
-                        <span class="tag">Seven</span>
-                        <span class="tag">Eight</span>
-                        <span class="tag">Nine</span>
-                    </div>
-                </div>
-            </div>
+            <?php echo get_field('skills'); ?>
         </div>
     </section>
 </article>
