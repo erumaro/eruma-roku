@@ -7252,6 +7252,23 @@ img.wp-smiley, img.emoji {
   background: none !important;
   padding: 0 !important; }
 
+/* COMPONENTS ----------------------------------------
+----------------------------------------------------*/
+.navbar-burger span {
+  height: 2px; }
+
+/* LAYOUT STYLES -------------------------------------
+----------------------------------------------------*/
+.site-info {
+  width: 100%;
+  display: block;
+  margin-top: 1.5rem;
+  float: left;
+  margin-bottom: 4rem !important; }
+  @media screen and (min-width: 1024px) {
+    .site-info {
+      text-align: center; } }
+
 /* TEMPLATE STYLES -----------------------------------
 ----------------------------------------------------*/
 /* PAGE AND SINGLE POST TYPES STYLES -----------------
@@ -7304,6 +7321,9 @@ img.wp-smiley, img.emoji {
 .updated:not(.published) {
   display: none; }
 
+article .navbar-item, .navbar-link {
+  color: whitesmoke; }
+
 /* PAGE STYLES ---------------------------------------
 ----------------------------------------------------*/
 /* ABOUT PAGE STYLES ---------------------------------
@@ -7347,20 +7367,26 @@ img.wp-smiley, img.emoji {
 
 /* New code 2019-11-15 */
 .full-width-bg {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.projects .title, .skills .title {
+  margin-top: 1.5rem; }
 
 .project-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px; }
+  height: 300px;
+  background-size: cover;
+  background-position: top center; }
 
 .project-text {
   background-color: rgba(119, 20, 20, 0.8);
-  padding: 1em;
+  padding: 1.5rem;
   transition: 1s;
   color: #fff; }
   .project-text .title {
@@ -7373,6 +7399,9 @@ img.wp-smiley, img.emoji {
   background: #771414; }
   .project-footer .button {
     margin-bottom: 0; }
+
+.skills {
+  padding: 1.5rem; }
 
 .skills .column {
   -webkit-transform: perspective(5em) translateZ(0);
@@ -7432,7 +7461,7 @@ img.wp-smiley, img.emoji {
     color: #fff; }
 
 .post-type-archive-projects article, .tax-technology article {
-  margin: 4em; }
+  margin: 1.5rem; }
 
 .post-type-archive-projects .project-content, .tax-technology .project-content {
   overflow: hidden;

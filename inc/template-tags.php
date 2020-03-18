@@ -51,7 +51,7 @@ if ( ! function_exists( 'getFeaturedImage' ) ) :
 			return;
         }
         
-        echo 'style="background: url('. get_the_post_thumbnail_url() .') center center no-repeat"';
+        echo 'style="background-image: url('. get_the_post_thumbnail_url() .')"';
     }
 endif;
 

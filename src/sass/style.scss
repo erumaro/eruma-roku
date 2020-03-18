@@ -11,6 +11,12 @@ $link: #1a4a98;
 @import "general";
 @import "screen-reader";
 @import "smiley";
+/* COMPONENTS ----------------------------------------
+----------------------------------------------------*/
+@import "components/components";
+/* LAYOUT STYLES -------------------------------------
+----------------------------------------------------*/
+@import "layout/layout";
 /* TEMPLATE STYLES -----------------------------------
 ----------------------------------------------------*/
 @import "templates/page_and_single";
