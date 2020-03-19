@@ -7376,6 +7376,10 @@ article .navbar-item, .navbar-link {
 .projects .title, .skills .title {
   margin-top: 1.5rem; }
 
+@media screen and (min-width: 639px) {
+  .projects .columns {
+    display: flex; } }
+
 .project-content {
   display: flex;
   justify-content: center;
@@ -7401,7 +7405,8 @@ article .navbar-item, .navbar-link {
     margin-bottom: 0; }
 
 .skills {
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  display: flex; }
 
 .skills .column {
   -webkit-transform: perspective(5em) translateZ(0);
@@ -7412,12 +7417,14 @@ article .navbar-item, .navbar-link {
   transition-property: transform, -webkit-transform; }
   .skills .column:hover {
     background-color: #771414;
-    color: #fff;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    z-index: 1; }
+    color: #fff; }
     .skills .column:hover h3 {
       color: #fff; }
+    @media screen and (min-height: 1023px) {
+      .skills .column:hover {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+        z-index: 1; } }
   @media (prefers-reduced-motion: reduce) {
     .skills .column {
       -webkit-transform: none;

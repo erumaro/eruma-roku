@@ -49,6 +49,12 @@
     }
 }
 
+.projects .columns {
+    @media screen and (min-width: 639px) {
+        display: flex;
+    }
+}
+
 .project-content{
     display: flex;
     justify-content: center;
@@ -84,6 +90,7 @@
 
 .skills {
     padding: 1.5rem;
+    display: flex;
 }
 
 .skills .column{
@@ -94,11 +101,14 @@
     &:hover{
         background-color: $primary;
         color: #fff;
-        transform: scale(1.1);
-        z-index: 1;
 
         h3{
             color: #fff;
+        }
+
+        @media screen and (min-height: 1023px) {
+            transform: scale(1.1);
+            z-index: 1;
         }
     }
 

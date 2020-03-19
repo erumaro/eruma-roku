@@ -20,7 +20,7 @@
     <section id="projects" class="projects full-width-bg">
         <div class="container content">
             <h2 class="title">Projekt</h2>
-            <div class="columns">
+            <div class="columns is-tablet">
             <?php
             $latest_project = array(
                 'post_type'         => 'projects',
@@ -60,7 +60,6 @@
                 }
                 wp_reset_postdata();
             } ?>
-            <hr>
             </div><!-- .columns -->
         </div><!-- .container -->
     </section>

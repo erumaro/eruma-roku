@@ -31,7 +31,7 @@
             </div>
         </div>
     </header>
-    <div class="entry-content content is-large">
+    <div class="entry-content content is-medium">
         <div class="container">
 		<?php
 		the_content( sprintf(
