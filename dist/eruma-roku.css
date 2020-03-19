@@ -7281,7 +7281,7 @@ img.wp-smiley, img.emoji {
   background-size: cover; }
 
 .entry-content, .comments-area, .pagination {
-  padding: 4.5rem 0; }
+  padding: 1.5rem; }
 
 .has-post-thumbnail .entry-header > .hero-body {
   background-color: rgba(119, 20, 20, 0.8); }
@@ -7328,6 +7328,9 @@ article .navbar-item, .navbar-link {
 ----------------------------------------------------*/
 /* ABOUT PAGE STYLES ---------------------------------
 ----------------------------------------------------*/
+.post-41 .entry-content {
+  margin: 1.5rem; }
+
 .timeline-marker.is-success.is-icon {
   color: #fff; }
 
