@@ -1,0 +1,9 @@
+*:focus {
+    outline: 2px #000 solid;
+}
+
+.is-primary *:focus {
+    outline: 2px #fff solid;
+}
+
+@import "screen-reader";

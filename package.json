@@ -24,7 +24,7 @@
     "@babel/preset-env": "^7.1.6",
     "autoprefixer": "^9.4.2",
     "babel-loader": "^8.0.4",
-    "bulma": "^0.7.2",
+    "bulma": "^0.7.5",
     "css-loader": "^1.0.1",
     "image-webpack-loader": "^6.0.0",
     "mini-css-extract-plugin": "^0.4.5",
@@ -39,7 +39,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "bulma-timeline": "^3.0.0",
+    "bulma-timeline": "^3.0.4",
     "underscore": "^1.9.1",
     "validate.js": "^0.12.0"
   }

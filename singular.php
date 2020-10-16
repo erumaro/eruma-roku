@@ -14,15 +14,8 @@
             if ( ! is_page() ) {
             echo eruma_roku_custom_post_nav();
             // the_post_navigation();
-            } else{ ?>
-                <div class="back-to-top-wrapper">
-                <?php
-                $backtotoplinkinner = '<i class="fas fa-angle-up"></i><span class="screen-reader-text">' . __( 'Back to top' ) .'</span>';
-                $backtotop = '<div class="back-to-top"><a href="#masthead">'. $backtotoplinkinner .'</a></div>';
-                echo $backtotop;
-                ?>
-                </div>
-                <?php
+            } else{
+                
             }
 
 			if ( comments_open() || get_comments_number() ) {

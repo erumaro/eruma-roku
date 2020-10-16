@@ -10,7 +10,7 @@
 <body <?php body_class(); ?>>
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'eruma-roku' ); ?></a>
     <header id="masthead" class="site-header" role="banner">
-        <nav id="site-navigation" class="main-navigation navbar is-primary" aria-label="Site Navigation">
+        <nav id="site-navigation" class="main-navigation navbar is-primary" aria-label="<?php esc_attr_e('Site Navigation', 'eruma-roku'); ?>">
             <div class="container">
                 <div class="navbar-brand">
                     <?php
@@ -22,11 +22,12 @@
                         echo '<h1 class="navbar-item custom-logo-link">' . get_bloginfo('name') . '</h1>';
                     }
                     ?>
-                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <button class="navbar-burger burger" aria-label="<?php esc_attr_e('Menu', 'eruma-roku'); ?>" aria-expanded="false" data-target="navbarBasicExample" aria-controls="navbarBasicExample">
+                        <span class="screen-reader-text"><?php esc_html_e('Primary menu', 'eruma-roku') ?></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
-                    </a>
+                    </button>
                 </div>
 
                 <div id="navbarBasicExample" class="navbar-menu">

@@ -12,10 +12,10 @@
 }
 
 .screen-reader-text:focus {
-    background-color: #f7f7f7;
+    background-color: #DE1010;
     clip: auto !important;
     clip-path: none;
-    color: #707070;
+    color: #ffffff;
     display: block;
     font-size: 1em;
     height: auto;
@@ -26,4 +26,5 @@
     top: 5px;
     width: auto;
     z-index: 100000;
+    outline: 2px #fff solid;
 }

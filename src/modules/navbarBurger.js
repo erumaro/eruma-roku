@@ -10,6 +10,14 @@ return document.addEventListener( 'DOMContentLoaded', () => {
 
                 el.classList.toggle( 'is-active' );
                 $target.classList.toggle( 'is-active' );
+
+                let expandMenu = el.getAttribute('aria-expanded');
+                if( expandMenu == 'true'){
+                    expandMenu = 'false'
+                } else {
+                    expandMenu = 'true'
+                }
+                el.setAttribute('aria-expanded', expandMenu);
             } );
         } );
     }

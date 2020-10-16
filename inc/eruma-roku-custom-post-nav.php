@@ -28,11 +28,8 @@ function eruma_roku_custom_post_nav( $args = array() ) {
         $args['taxonomy']
     );
 
-    $backtotoplinkinner = '<i class="fas fa-angle-up"></i><span class="screen-reader-text">' . __( 'Back to top' ) .'</span>';
-    $backtotop = '<div class="back-to-top"><a href="#masthead">'. $backtotoplinkinner .'</a></div>';
-
     if( $previous || $next ) {
-        $navigation = _navigation_markup( $previous . $backtotop . $next, 'post-navigation', $args['screen_reader_text'] );
+        $navigation = _navigation_markup( $previous . $next, 'post-navigation', $args['screen_reader_text'] );
     }
 
     return $navigation;

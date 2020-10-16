@@ -19,15 +19,7 @@
                 <?php
             endwhile;
 
-            eruma_roku_pagination( $before = '<div class="container">', $after = '</div>' ); ?>
-
-            <div class="back-to-top-wrapper">
-            <?php
-            $backtotoplinkinner = '<i class="fas fa-angle-up"></i><span class="screen-reader-text">' . __( 'Back to top' ) .'</span>';
-            $backtotop = '<div class="back-to-top"><a href="#masthead">'. $backtotoplinkinner .'</a></div>';
-            echo $backtotop;
-            ?>
-            </div><?php
+            eruma_roku_pagination( $before = '<div class="container">', $after = '</div>' );
 
         else : 
 

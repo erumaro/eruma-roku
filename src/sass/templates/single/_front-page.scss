@@ -65,17 +65,12 @@
 }
 
 .project-text{
-    background-color: rgba($primary, 0.8);
+    background-color: rgba($primary, 1);
     padding: 1.5rem;
-    transition: 1s;
     color: #fff;
 
     .title{
         color: #fff;
-    }
-
-    &:hover{
-        background-color: rgba($primary, 1);
     }
 }
 
