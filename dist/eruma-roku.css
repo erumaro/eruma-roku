@@ -7462,6 +7462,12 @@ a {
 .is-primary *:focus {
   outline: 2px #fff solid; }
 
+.navbar-start a.navbar-item:focus, .navbar-start a.navbar-item[focus-within], .navbar-start a.navbar-item:hover, .navbar-start a.navbar-item.is-active, .navbar-link:focus, .navbar-link[focus-within], .navbar-link:hover, .navbar-link.is-active {
+  outline: 2px #000 solid; }
+
+.navbar-start a.navbar-item:focus, .navbar-start a.navbar-item:focus-within, .navbar-start a.navbar-item:hover, .navbar-start a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+  outline: 2px #000 solid; }
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -7512,6 +7518,12 @@ img.wp-smiley, img.emoji {
 .menu-item {
   text-decoration: none; }
 
+.navbar-burger:focus,
+.navbar-burger.is-active,
+.navbar-burger:hover,
+.navbar .button.is-primary.is-active {
+  background-color: #DE1010; }
+
 @media screen and (min-width: 1024px) {
   .navbar.is-primary .navbar-start > a.navbar-item:focus, .navbar.is-primary .navbar-start > a.navbar-item:hover, .navbar.is-primary .navbar-start > a.navbar-item.is-active,
   .navbar.is-primary .navbar-start .navbar-link:focus,
@@ -7525,6 +7537,22 @@ img.wp-smiley, img.emoji {
   .navbar.is-primary .navbar-end .navbar-link.is-active {
     background-color: #DE1010;
     color: #fff; } }
+
+a.navbar-item:focus, a.navbar-item[focus-within], a.navbar-item:hover, a.navbar-item.is-active,
+.navbar-link:focus,
+.navbar-link[focus-within],
+.navbar-link:hover,
+.navbar-link.is-active {
+  background-color: #DE1010;
+  color: #fff; }
+
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+.navbar-link.is-active {
+  background-color: #DE1010;
+  color: #fff; }
 
 /* LAYOUT STYLES -------------------------------------
 ----------------------------------------------------*/

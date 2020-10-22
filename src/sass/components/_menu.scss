@@ -6,9 +6,32 @@
     text-decoration: none;
 }
 
-@media screen and (min-width: 1024px){
-.navbar.is-primary .navbar-start > a.navbar-item:focus, .navbar.is-primary .navbar-start > a.navbar-item:hover, .navbar.is-primary .navbar-start > a.navbar-item.is-active, .navbar.is-primary .navbar-start .navbar-link:focus, .navbar.is-primary .navbar-start .navbar-link:hover, .navbar.is-primary .navbar-start .navbar-link.is-active, .navbar.is-primary .navbar-end > a.navbar-item:focus, .navbar.is-primary .navbar-end > a.navbar-item:hover, .navbar.is-primary .navbar-end > a.navbar-item.is-active, .navbar.is-primary .navbar-end .navbar-link:focus, .navbar.is-primary .navbar-end .navbar-link:hover, .navbar.is-primary .navbar-end .navbar-link.is-active {
+.navbar-burger:focus,
+.navbar-burger.is-active,
+.navbar-burger:hover,
+.navbar .button.is-primary.is-active {
+    background-color: #DE1010;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar.is-primary .navbar-start>a.navbar-item:focus,
+    .navbar.is-primary .navbar-start>a.navbar-item:hover,
+    .navbar.is-primary .navbar-start>a.navbar-item.is-active,
+    .navbar.is-primary .navbar-start .navbar-link:focus,
+    .navbar.is-primary .navbar-start .navbar-link:hover,
+    .navbar.is-primary .navbar-start .navbar-link.is-active,
+    .navbar.is-primary .navbar-end>a.navbar-item:focus,
+    .navbar.is-primary .navbar-end>a.navbar-item:hover,
+    .navbar.is-primary .navbar-end>a.navbar-item.is-active,
+    .navbar.is-primary .navbar-end .navbar-link:focus,
+    .navbar.is-primary .navbar-end .navbar-link:hover,
+    .navbar.is-primary .navbar-end .navbar-link.is-active {
+        background-color: #DE1010;
+        color: #fff;
+    }
+}
+
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
     background-color: #DE1010;
     color: #fff;
-}
 }

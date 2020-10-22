@@ -9,7 +9,7 @@
 </head>
 <body <?php body_class(); ?>>
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'eruma-roku' ); ?></a>
-    <header id="masthead" class="site-header" role="banner">
+    <header id="masthead" class="site-header">
         <nav id="site-navigation" class="main-navigation navbar is-primary" aria-label="<?php esc_attr_e('Site Navigation', 'eruma-roku'); ?>">
             <div class="container">
                 <div class="navbar-brand">
@@ -22,8 +22,7 @@
                         echo '<h1 class="navbar-item custom-logo-link">' . get_bloginfo('name') . '</h1>';
                     }
                     ?>
-                    <button class="navbar-burger burger" aria-label="<?php esc_attr_e('Menu', 'eruma-roku'); ?>" aria-expanded="false" data-target="navbarBasicExample" aria-controls="navbarBasicExample">
-                        <span class="screen-reader-text"><?php esc_html_e('Primary menu', 'eruma-roku') ?></span>
+                    <button class="button is-primary navbar-burger burger" aria-label="<?php esc_attr_e('Menu', 'eruma-roku'); ?>" aria-expanded="false" data-target="navbarBasicExample" aria-controls="navbarBasicExample">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
