@@ -1,113 +1,43 @@
-.home .section .title{
-    text-align: center;
-}
-
-.box {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.box:last-child, .content:last-child {
-    margin-bottom: 1.5rem;
-}
-
-.skills-item {
-    min-height: 400px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: column;
-}
-
-.content .skills-item ul{
-    list-style: none;
-    margin-left: 0;
-    margin-top: 0;
-}
-
-.column figure{
-    margin: auto;
-}
-
-.content figure:not(:last-child) {
-    margin-bottom: auto;
-}
-
-/* New code 2019-11-15 */
-
-.full-width-bg{
-    min-height: 100vh;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.projects, .skills{
-    .title {
-        margin-top: 1.5rem;
-    }
-}
-
-.projects .columns {
-    @media screen and (min-width: 639px) {
-        display: flex;
-    }
-}
-
-.project-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
+.project-wrapper {
     background-size: cover;
-    background-position: top center;
-}
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 
-.project-text{
-    background-color: rgba($primary, 1);
-    padding: 1.5rem;
-    color: #fff;
+    > a {
+        @include primary-gradient;
+        text-decoration: none;
+        display: flex;
+        height: 300px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
 
-    .title{
-        color: #fff;
+        &:hover, &:focus {
+            text-decoration: underline;
+            text-decoration-style: dashed;
+        }
     }
 }
 
-.project-footer{
+.project-wrapper > a, .project-wrapper .title {
+    color: #fff;
+}
+
+.project-content {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 12px;
+}
+
+.full-width-bg {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-footer {
     padding: 1em;
     background: $primary;
-
-    .button{
-        margin-bottom: 0;
-    }
-}
-
-.skills {
-    padding: 1.5rem;
-    display: flex;
-}
-
-.skills .column{
-    transform: perspective(5em) translateZ(0);
-    transition-duration: 0.3s;
-    transition-property: transform;
-
-    &:hover{
-        background-color: $primary;
-        color: #fff;
-
-        h3{
-            color: #fff;
-        }
-
-        @media screen and (min-height: 1023px) {
-            transform: scale(1.1);
-            z-index: 1;
-        }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-        transform: none;
-    }
 }

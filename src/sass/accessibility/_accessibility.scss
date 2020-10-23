@@ -1,13 +1,5 @@
 *:focus {
-    outline: 2px #000 solid;
-}
-
-.is-primary *:focus {
-    outline: 2px #fff solid;
-}
-
-.navbar-start a.navbar-item:focus, .navbar-start a.navbar-item:focus-within, .navbar-start a.navbar-item:hover, .navbar-start a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
-    outline: 2px #000 solid;
+    outline: 3px orange solid;
 }
 
 @import "screen-reader";

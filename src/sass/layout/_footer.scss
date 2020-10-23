@@ -1,11 +1,5 @@
-.site-info {
-    width: 100%;
-    display: block;
-    margin-top: 1.5rem;
-    float: left;
-    margin-bottom: 4rem !important; // Added to because of BtT
-
-    @media screen and (min-width: 1024px) {
-        text-align: center;
-    }
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

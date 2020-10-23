@@ -1,13 +1,21 @@
-$falured: #771414;
-$primary: $falured;
-$link: #1a4a98;
-
 @charset "utf-8";
+
+// Theme Colors
+$falured: #801818;
+$darkcyan: #12806F;
+$darkgreen: #40801F;
+$moderategreen: #6ECC3B;
+$strongcyan: #12CCB0;
+
+$primary: $falured;
+$link: $darkcyan;
+
 @import "~bulma/bulma";
 @import "~bulma-timeline/dist/css/bulma-timeline";
 
 /* GENERAL STYLES ------------------------------------
 ----------------------------------------------------*/
+@import "custom_vars_mixins";
 @import "general";
 @import "accessibility/accessibility";
 @import "smiley";

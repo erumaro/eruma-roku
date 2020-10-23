@@ -1,11 +1,17 @@
-html, body{
-    scroll-behavior: smooth;
+@media screen and (prefers-reduced-motion: no-preference) {
+    html, body {
+        scroll-behavior: smooth;
+    }
 }
 
 a {
     text-decoration: underline;
+}
 
-    &:hover{
-        color: $primary;
-    }
+a.button {
+    text-decoration: none;
+}
+
+.is-primary a {
+    color: #fff;
 }
