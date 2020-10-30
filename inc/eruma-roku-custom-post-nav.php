@@ -2,8 +2,8 @@
 
 function eruma_roku_custom_post_nav( $args = array() ) {
     $args = wp_parse_args( $args, array(
-        'prev_text'             =>  '<i class="fas fa-angle-left"></i><span class="screen-reader-text">' . __( 'Prevous post:' ) . ' %title</span>',
-        'next_text'             =>  '<i class="fas fa-angle-right"></i><span class="screen-reader-text">' . __( 'Next post:' ) . ' %title</span>',
+        'prev_text'             =>  '<span class="icon"><i class="fas fa-angle-left"></i></span><span>' . __( 'Prevous post:' ) . ' %title</span>',
+        'next_text'             =>  '<span>' . __( 'Next post:' ) . ' %title</span><span class="icon"><i class="fas fa-angle-right"></i></span>',
         'in_same_term'          =>  false,
         'excluded_terms'        =>  '',
         'taxonomy'              =>  'category',
@@ -29,7 +29,7 @@ function eruma_roku_custom_post_nav( $args = array() ) {
     );
 
     if( $previous || $next ) {
-        $navigation = _navigation_markup( $previous . $next, 'post-navigation', $args['screen_reader_text'] );
+        $navigation = _navigation_markup( $previous . $next, 'container', $args['screen_reader_text'] );
     }
 
     return $navigation;

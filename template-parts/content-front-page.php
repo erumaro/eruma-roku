@@ -61,7 +61,7 @@
             </div><!-- .columns -->
         </div><!-- .container -->
     </section>
-    <section id="skills" class="skills full-width-bg">
+    <section id="skills" class="skills full-width-bg has-background-success">
         <div class="container content">
             <?php echo get_field('skills'); ?>
         </div>

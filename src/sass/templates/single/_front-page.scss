@@ -1,43 +1,30 @@
-.project-wrapper {
-    background-size: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-
-    > a {
-        @include primary-gradient;
-        text-decoration: none;
-        display: flex;
-        height: 300px;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-
-        &:hover, &:focus {
-            text-decoration: underline;
-            text-decoration-style: dashed;
-        }
-    }
-}
-
-.project-wrapper > a, .project-wrapper .title {
-    color: #fff;
-}
-
-.project-content {
+.home .project-content {
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 12px;
 }
 
 .full-width-bg {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
-.project-footer {
-    padding: 1em;
-    background: $primary;
+.skills {
+    .column {
+        background-color: $white;
+        margin: 0.75rem;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    h2.title {
+        color: $white;
+    }
+
+    .tags .tag {
+        border: 1px solid $black;
+    }
 }

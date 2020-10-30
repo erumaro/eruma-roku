@@ -3,6 +3,10 @@
     text-decoration-style: dashed;
 }
 
+.pagination-previous, .pagination-next, .pagination-link {
+    border-color: #363636;
+}
+
 /* PROJECT STYLES ------------------------------------
 ----------------------------------------------------*/
 @import "project";

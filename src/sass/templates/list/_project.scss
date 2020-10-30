@@ -1,0 +1,39 @@
+.project-wrapper {
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    > a {
+        @include primary-gradient;
+        text-decoration: none;
+        display: flex;
+        height: 300px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+            text-decoration-style: dashed;
+        }
+    }
+}
+
+.project-wrapper > a, .project-wrapper .title {
+    color: #fff;
+}
+
+.post-type-archive-projects .projects {
+    margin: 0.75em 0;
+}
+
+.project-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 12px;
+}
+
+.project-footer {
+    padding: 1em;
+    background: $primary;
+}

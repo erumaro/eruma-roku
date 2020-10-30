@@ -6,9 +6,12 @@ $darkcyan: #12806F;
 $darkgreen: #40801F;
 $moderategreen: #6ECC3B;
 $strongcyan: #12CCB0;
+$pureorange: #F05F00;
 
 $primary: $falured;
 $link: $darkcyan;
+$success: $darkgreen;
+$focus: $pureorange;
 
 @import "~bulma/bulma";
 @import "~bulma-timeline/dist/css/bulma-timeline";

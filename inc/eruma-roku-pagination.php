@@ -42,13 +42,6 @@ function eruma_roku_pagination( $before = '', $after = '' ) {
 		echo '<a class="pagination-previous" title="'. esc_attr__('This is the first page', 'eruma-roku') .'" disabled>'. esc_html__('Previous', 'eruma-roku') .'</a>';
 	}
 
-	$nextposts = get_next_posts_link( esc_html__('Next', 'eruma-roku') );
-	if( $nextposts ){
-		echo $nextposts;
-	} else {
-		echo '<a class="pagination-next" title="'. esc_attr__('This is the last page', 'eruma-roku') .'" disabled>'. esc_html__('Next page', 'eruma-roku') .'</a>';
-	}
-
 	echo '<ul class="pagination-list">';
 	for( $i = $start_page; $i <= $end_page; $i++){
         if( $i == $paged ){
@@ -59,6 +52,13 @@ function eruma_roku_pagination( $before = '', $after = '' ) {
 	}
 
 	echo '</ul>';
+
+	$nextposts = get_next_posts_link( esc_html__('Next', 'eruma-roku') );
+	if( $nextposts ){
+		echo $nextposts;
+	} else {
+		echo '<a class="pagination-next" title="'. esc_attr__('This is the last page', 'eruma-roku') .'" disabled>'. esc_html__('Next page', 'eruma-roku') .'</a>';
+	}
 	echo '</nav>'.$after."";
 }
 

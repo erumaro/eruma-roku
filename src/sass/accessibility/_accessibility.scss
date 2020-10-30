@@ -1,5 +1,19 @@
 *:focus {
-    outline: 3px orange solid;
+    outline: 3px $focus solid;
+}
+
+.button:focus {
+    outline: 3px $focus solid;
+}
+
+.pagination-link:focus {
+    outline: 3px $focus solid;   
+}
+
+.pagination-previous, .pagination-next, .pagination-link {
+    &:focus {
+        outline: 3px $focus solid;
+    }
 }
 
 @import "screen-reader";

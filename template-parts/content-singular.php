@@ -8,12 +8,12 @@
             } elseif ( is_single() && !is_singular('projects') ){
                 the_title( '<h2 class="entry-title title">', '</h2>' );
                 ?>
-                <h3 class="entry-meta subtitle">
+                <p class="entry-meta subtitle">
                     <?php
                     getPostDateHtml();
                     getPostAuthorHtml();
                     ?>
-                </h3><?php
+                </p><?php
             } elseif ( is_singular( 'projects' ) ){ 
                 the_title( '<h2 class="entry-title title">', '</h2>' ); ?>
                 <div class="entry-meta buttons">
