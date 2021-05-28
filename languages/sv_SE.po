@@ -1,19 +1,17 @@
-# Copyright (C) 2019 Tobias Årud
-# This file is distributed under the .
 msgid ""
 msgstr ""
-"Project-Id-Version: eruma-roku 1.0.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/eruma-roku\n"
-"POT-Creation-Date: 2019-11-26T13:34:52+01:00\n"
-"PO-Revision-Date: 2019-11-26 13:35+0100\n"
+"POT-Creation-Date: 2021-05-28T17:35:48+02:00\n"
+"PO-Revision-Date: 2021-05-28 17:41+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
-"X-Domain: eruma-roku\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Theme Name of the theme
@@ -39,7 +37,7 @@ msgstr ""
 #. translators: 1: title.
 #: comments.php:19
 msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr "En kommentar till &ldquo;%1$s&rdquo;"
+msgstr "En kommentar på &ldquo;%1$s&rdquo;"
 
 #. translators: 1: comment count number, 2: title.
 #: comments.php:25
@@ -51,7 +49,7 @@ msgstr[1] "%1$s kommentarer till &ldquo;%2$s&rdquo;"
 
 #: comments.php:49
 msgid "Comments are closed."
-msgstr "Kommentarer är stängda."
+msgstr "Stängt för kommentarer."
 
 #: comments.php:83
 msgid "Name"
@@ -59,19 +57,24 @@ msgstr "Namn"
 
 #: comments.php:86
 msgid "Email"
-msgstr "Email"
+msgstr "Epost"
 
 #: comments.php:89
 msgid "Website"
-msgstr "Hemsida"
+msgstr "Webbplats"
 
-#: footer.php:7
+#. translators: 1: Theme name, 2: Theme author.
+#: footer.php:9
 msgid "Theme: %1$s by %2$s."
 msgstr "Tema: %1$s av %2$s."
 
+#: footer.php:13
+msgid "Back to top"
+msgstr "Tillbaka till sidhuvudet"
+
 #: functions.php:20
 msgid "Primary"
-msgstr "Primär"
+msgstr "Huvudmeny"
 
 #: functions.php:29
 msgid "Footer Widget Area"
@@ -83,7 +86,15 @@ msgstr "Lägger till widgets i temats footer."
 
 #: header.php:11
 msgid "Skip to content"
-msgstr "Hoppa till innehåll"
+msgstr "Fortsätt till innehåll"
+
+#: header.php:13
+msgid "Site Navigation"
+msgstr "Huvudnavigation"
+
+#: header.php:25
+msgid "Menu"
+msgstr "Meny"
 
 #: inc/eruma-roku-pagination.php:36
 msgid "pagination"
@@ -97,29 +108,29 @@ msgstr "Föregående"
 msgid "This is the first page"
 msgstr "Detta är första sidan"
 
-#: inc/eruma-roku-pagination.php:45
-msgid "Next"
-msgstr "Nästa"
-
-#: inc/eruma-roku-pagination.php:49
-msgid "This is the last page"
-msgstr "Detta är sista sidan"
-
-#: inc/eruma-roku-pagination.php:49
-msgid "Next page"
-msgstr "Nästa sida"
-
-#: inc/eruma-roku-pagination.php:55
+#: inc/eruma-roku-pagination.php:48
 msgid "Page "
 msgstr "Sida "
 
-#: inc/eruma-roku-pagination.php:55
+#: inc/eruma-roku-pagination.php:48
 msgid "page"
 msgstr "sida"
 
-#: inc/eruma-roku-pagination.php:57
+#: inc/eruma-roku-pagination.php:50
 msgid "Go to page "
 msgstr "Gå till sida "
+
+#: inc/eruma-roku-pagination.php:56
+msgid "Next"
+msgstr "Nästa"
+
+#: inc/eruma-roku-pagination.php:60
+msgid "This is the last page"
+msgstr "Detta är sista sidan"
+
+#: inc/eruma-roku-pagination.php:60
+msgid "Next page"
+msgstr "Nästa sida"
 
 #: inc/post-type-project.php:8
 msgctxt "Post Type General Name"
@@ -279,7 +290,7 @@ msgstr "Sök artiklar"
 
 #: inc/post-type-project.php:79
 msgid "Not Found"
-msgstr "Hittades inte"
+msgstr "Inget hittat"
 
 #: inc/post-type-project.php:80
 msgid "No items"
@@ -289,7 +300,7 @@ msgstr "Inga artiklar"
 #: inc/template-tags.php:22
 msgctxt "post date"
 msgid "Posted on %s"
-msgstr "Publicerad %s"
+msgstr "Publicerad den %s"
 
 #. translators: %s: post author.
 #: inc/template-tags.php:38
@@ -297,15 +308,28 @@ msgctxt "post author"
 msgid "by %s"
 msgstr "av %s"
 
-#: inc/template-tags.php:69 inc/template-tags.php:79
+#: inc/template-tags.php:69 inc/template-tags.php:84
 msgid "Posted in"
 msgstr "Kategoriserat som"
 
-#: inc/template-tags.php:88
+#: inc/template-tags.php:80
+msgid "Leave a comment"
+msgstr "Lämna en kommentar"
+
+#: inc/template-tags.php:80
+msgid "1 Comment"
+msgstr "1 kommentar"
+
+#: inc/template-tags.php:80
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: inc/template-tags.php:93
 msgid "Tags:"
 msgstr "Etiketter:"
 
-#: inc/template-tags.php:124
+#. translators: comment author
+#: inc/template-tags.php:130
 msgid "<h3 class=\"title is-4\">%s says:</h3>"
 msgstr "<h3 class=\"title is-4\">%s skriver:</h3>"
 
@@ -315,19 +339,14 @@ msgstr "<h3 class=\"title is-4\">%s skriver:</h3>"
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Fortsätt att läsa<span class=\"screen-reader-text\"> \"%s\"</span>"
 
-#: template-parts/content-front-page.php:46
-#: template-parts/content-projects.php:16
-msgid "Continue reading "
-msgstr "Fortsätt att läsa "
-
-#: template-parts/content-front-page.php:51
-#: template-parts/content-projects.php:21
+#: template-parts/content-front-page.php:49
+#: template-parts/content-projects.php:20
 #: template-parts/content-singular.php:22
 msgid "Visit Website"
-msgstr "Besök hemsida"
+msgstr "Besök webbplats"
 
-#: template-parts/content-front-page.php:54
-#: template-parts/content-projects.php:24
+#: template-parts/content-front-page.php:52
+#: template-parts/content-projects.php:23
 #: template-parts/content-singular.php:25
 msgid "Visit Github Repo"
-msgstr "Besök Github repo"
+msgstr "Besök Github repon"

@@ -126,7 +126,8 @@ function eruma_roku_comment( $comment, $args, $depth ) { ?>
                     </figure>
                 </div>
                 <div class="media-content">
-                    <?php printf( __( '<h3 class="title is-4">%s says:</h3>', 'eruma-roku' ), get_comment_author_link() ); ?>
+                    <?php  /* translators: comment author */
+                    printf( __( '<h3 class="title is-4">%s says:</h3>', 'eruma-roku' ), get_comment_author_link() ); ?>
                     <h4 class="subtitle is-6">
                     <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>"><?php
                         /* translators: 1: date, 2: time */

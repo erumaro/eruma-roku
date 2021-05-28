@@ -1,4 +1,4 @@
-# Copyright (C) 2019 Tobias Årud
+# Copyright (C) 2021 Tobias Årud
 # This file is distributed under the .
 msgid ""
 msgstr ""
@@ -9,9 +9,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-11-26T13:34:52+01:00\n"
+"POT-Creation-Date: 2021-05-28T17:35:48+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.4.0\n"
+"X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: eruma-roku\n"
 
 #. Theme Name of the theme
@@ -63,8 +63,13 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: footer.php:7
+#. translators: 1: Theme name, 2: Theme author.
+#: footer.php:9
 msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: footer.php:13
+msgid "Back to top"
 msgstr ""
 
 #: functions.php:20
@@ -83,6 +88,14 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
+#: header.php:13
+msgid "Site Navigation"
+msgstr ""
+
+#: header.php:25
+msgid "Menu"
+msgstr ""
+
 #: inc/eruma-roku-pagination.php:36
 msgid "pagination"
 msgstr ""
@@ -96,28 +109,28 @@ msgstr ""
 msgid "This is the first page"
 msgstr ""
 
-#: inc/eruma-roku-pagination.php:45
-msgid "Next"
-msgstr ""
-
-#: inc/eruma-roku-pagination.php:49
-msgid "This is the last page"
-msgstr ""
-
-#: inc/eruma-roku-pagination.php:49
-msgid "Next page"
-msgstr ""
-
-#: inc/eruma-roku-pagination.php:55
+#: inc/eruma-roku-pagination.php:48
 msgid "Page "
 msgstr ""
 
-#: inc/eruma-roku-pagination.php:55
+#: inc/eruma-roku-pagination.php:48
 msgid "page"
 msgstr ""
 
-#: inc/eruma-roku-pagination.php:57
+#: inc/eruma-roku-pagination.php:50
 msgid "Go to page "
+msgstr ""
+
+#: inc/eruma-roku-pagination.php:56
+msgid "Next"
+msgstr ""
+
+#: inc/eruma-roku-pagination.php:60
+msgid "This is the last page"
+msgstr ""
+
+#: inc/eruma-roku-pagination.php:60
+msgid "Next page"
 msgstr ""
 
 #: inc/post-type-project.php:8
@@ -306,15 +319,28 @@ msgid "by %s"
 msgstr ""
 
 #: inc/template-tags.php:69
-#: inc/template-tags.php:79
+#: inc/template-tags.php:84
 msgid "Posted in"
 msgstr ""
 
-#: inc/template-tags.php:88
+#: inc/template-tags.php:80
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:80
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:80
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:93
 msgid "Tags:"
 msgstr ""
 
-#: inc/template-tags.php:124
+#. translators: comment author
+#: inc/template-tags.php:130
 msgid "<h3 class=\"title is-4\">%s says:</h3>"
 msgstr ""
 
@@ -325,19 +351,14 @@ msgstr ""
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: template-parts/content-front-page.php:46
-#: template-parts/content-projects.php:16
-msgid "Continue reading "
-msgstr ""
-
-#: template-parts/content-front-page.php:51
-#: template-parts/content-projects.php:21
+#: template-parts/content-front-page.php:49
+#: template-parts/content-projects.php:20
 #: template-parts/content-singular.php:22
 msgid "Visit Website"
 msgstr ""
 
-#: template-parts/content-front-page.php:54
-#: template-parts/content-projects.php:24
+#: template-parts/content-front-page.php:52
+#: template-parts/content-projects.php:23
 #: template-parts/content-singular.php:25
 msgid "Visit Github Repo"
 msgstr ""

@@ -22,8 +22,8 @@ function validateComments() {
                 },
                 messages: {
                     author: "Var vänlig och fyll i fältet.",
-                    email: "Vargod och fyll i en giltig email adress",
-                    comment: "Skriv en kommenmtar innan du skickar.",
+                    email: "Vargod och fyll i en giltig email adress. Har du använt @?",
+                    comment: "Skriv en kommentar innan du skickar.",
                     url: "Var vänlig skriv en giltig url/länk"
                 },
                 errorElement: "div",
