@@ -4,6 +4,10 @@
     text-decoration: none;
 }
 
+.pagination-link[disabled], .pagination-next[disabled], .pagination-previous[disabled] {
+    visibility: hidden;
+}
+
 .entry-content, .comments-area, .pagination {
     padding: 1.5rem 0;
 }
