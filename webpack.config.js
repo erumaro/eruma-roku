@@ -1,62 +1,51 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = {
-    entry: {
-        bundle: './src/index.js'
-    },
-    output: {
-        path: path.join(__dirname, 'dist'),
-        filename: '[name].js'
-    },
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /node-modules/,
-                use: 'babel-loader'
-            },
-            {
-                test: /\.s(a|c)ss$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    {
-                        loader: 'css-loader',
-                    },
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            ident: 'postcss',
-                            plugins: (loader) => [
-                                require('precss'),
-                                require('autoprefixer')
-                            ]
-                        }
-                    },
-                    {
-                        loader: 'sass-loader'
-                    }
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+module.exports = [
+    {
+        entry: {
+            'bundle': [
+                './src/index.js',
+                './src/sass/style.scss'
+            ]
+        },
+        output: {
+            filename: './dist/[name].min.[fullhash].js',
+            path: path.resolve(__dirname)
+        },
+        module: {
+            rules: [
+                {
+                    test: /\.(js|jsx)$/,
+                    exclude: /node_modules/,
+                    loader: 'babel-loader'
+                },
+                {
+                    test: /\.(sass|scss)$/,
+                    use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                },
+            ]
+        },
+        plugins: [
+            new CleanWebpackPlugin({
+                cleanOnceBeforeBuildPatterns: [
+                    './dist/*',
+                    './dist/*'
                 ]
-            },
-            {
-                test: /\.(gif|png|jp(e*)g|svg)$/,
-                use: 'url-loader'
-            },
-            {
-                test: /\.(gif|png|jp(e*)g|svg)$/,
-                loader: 'image-webpack-loader',
-                // Specify enforce: 'pre' to apply the loader
-                // before url-loader/svg-url-loader
-                // and not duplicate it in rules with them
-                enforce: 'pre'
-}
-        ]
-    },
-    plugins: [
-        new MiniCssExtractPlugin({
-                filename: 'eruma-roku.css'
-            })
-    ],
-    
-    watch: true
-}
+            }),
+            new MiniCssExtractPlugin({
+                filename: './dist/eruma-roku.min.[fullhash].css'
+            }),
+        ],
+        optimization: {
+            minimizer: [
+                `...`,
+                new CssMinimizerPlugin(),
+            ]
+        },
+    }
+];
